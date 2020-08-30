@@ -1,0 +1,19 @@
+1) Search
+[9:41 PM]
+2) Input new project descriptions and obtain past lesson learned that map to your descrription
+[9:41 PM]
+3) Risk analysis: How risky is your new project
+[9:42 PM]
+4) NASA Problems: A feature that articulates existing problems based on clustering on the back end.  The machine learning will detect problems arising by clustering on the data base and grouping similar problems together.  If that group grows large it will list a general descrition of the whole group in the NASA problems list
+[9:43 PM]
+Visualization can map to NASA Problems and Risk analysis
+[9:43 PM]
+Search is just general search like a google search with ordered relevancy
+[9:43 PM]
+With optional input flags
+[9:43 PM]
+Based on location, author etc
+[9:44 PM]
+Risk analysis takes  a project decription and finds potential problems from past lessons learned
+[9:44 PM]
+And that is pretty much it'
