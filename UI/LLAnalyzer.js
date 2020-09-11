@@ -1,11 +1,27 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
 
-n buttonClick(btn){
-  if(btn == 1)
+app.use(bodyParser.urlencoded({extended: true}));
+app.post('/description', (req, res) => {
+  res.send(`Project description is: ${req.body.projectDescription}.`); });
+const port = 8080;
+
+app.listen(port, ()=> { console.log(`Server running on port ${port}`)});
+
+var count = 1;
+function SearchIconClick()
+{
+  var iconProperty = document.getElementById("searchIcon");
+  if(count == 0)
   {
-    alert('Hello world!');
+    iconProperty.style.color =  #6CC417;
+    count = 1;
   }
-  if(btn == 2)
+  else
   {
-    alert('AYO WORLD!');
+    iconProperty.style.color = #43BFC7;
+    count = 0;
   }
+
 }
