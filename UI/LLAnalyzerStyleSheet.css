@@ -31,6 +31,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .topPanel p{
@@ -50,6 +51,10 @@ h1 {
   font-size: 16px;
   margin: 10px 30px;
   cursor: pointer;
+}
+.button:hover{
+  background-color: #307D7E;
+  outline: none;
 }
 
 .regularSearchBar{
@@ -80,7 +85,11 @@ h1 {
   cursor: pointer;
   outline: none;
 }
-
+.searchIcon:hover{
+  background-color: #307D7E;
+  color: #52D017;
+  outline: none;
+}
 .search{
   border: none;
   background: none;
@@ -129,37 +138,64 @@ h1 {
     font-size: 15px;
 }
 
-.topPanel label{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: lighter;
-  vertical-align: middle;
+.smartTopPanel{
+  background-color: rgb(255, 255, 255, 0.80);
+  border-style: solid;
+  border-color: rgb(74, 162, 12, 0.3);
+  border-width: 1px;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 5px;
+  width: 95%;
+  margin: 0px 15px;
 
 }
-.topPanel textarea{
+
+.smartTopPanel form{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
+  position: relative;
+}
+
+.smartTopPanel textarea{
  resize: none;
  display: block;
- vertical-align: middle;
- font-family: 'Roboto Slab', sans-serif;
- position: relative;
- left: 20%;
- height: 100px;
+ font-family: 'Roboto Condensed', sans-serif;
+ font-weight: lighter;
  box-sizing: border-box;
- border-color: green;
+ border-color:#6CC417;
+ border-style: solid;
+ height: 100px;
+ width: 675px;
+ border-radius: 5px;
+ outline: none;
+ margin: 10px -3px;
 }
 
 .SubmitDescription{
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
+  border-color: #6CC417;
   font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
   position: absolute;
-  right: 28%;
-  bottom: 69%;
+  top: 102%;
+  right: 44%;
   z-index: 2;
-  color: #6CC417;
-  background-color: white;
+  color: #3D3C3A ;
+  background-color: #F5F5DC;
+  width: 105px;
+  cursor: pointer;
+  outline: none;
 }
 
+.SubmitDescription:hover{
+  background-color: #307D7E;
+  color: white;
+  border: none;
+
+}
 .BackButton{
   border-width: 1px;
   border-radius: 10px;
@@ -173,6 +209,12 @@ h1 {
   cursor: pointer;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
+  color: white;
+  outline: none;
+}
+.BackButton:hover
+{
+  background-color: #307D7E;
   color: white;
 }
 
@@ -202,12 +244,22 @@ h1 {
   margin: 10px 0px;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+
+.SubmitSearch:hover{
+  background-color: #307D7E;
+
 }
 
 .AdvSearch .Date{
   width: 25%;
 }
 
+.AdvSearch input{
+  font-family: 'Roboto Condensed', sans-serif;
+}
 .dropdown{
   position: relative;
   margin: 0px 275px;
@@ -264,4 +316,42 @@ h1 {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.DescriptionDisp{
+ align: right;
+  margin: auto;
+}
+
+.DescriptionDisp h2{
+  font-family:'Roboto Condensed', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  position: absolute;
+  background-color: #F5F5DC ;
+  padding: 5px;
+  right: 30%;
+  top: -12%;
+
+}
+
+.DescriptionDisp textarea{
+  resize: none;
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  box-sizing: border-box;
+  border: none;
+  left: 58%;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: lighter;
+  outline: none;
+  background-color: #F5F5DC;
+  width: 40%;
+  top: 16%;
+  border-color: #E9AB17;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 12px;
 }

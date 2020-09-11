@@ -1,27 +1,24 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const app = express();
-
-app.use(bodyParser.urlencoded({extended: true}));
-app.post('/description', (req, res) => {
-  res.send(`Project description is: ${req.body.projectDescription}.`); });
-const port = 8080;
-
-app.listen(port, ()=> { console.log(`Server running on port ${port}`)});
-
-var count = 1;
-function SearchIconClick()
+function GetProjDescription()
 {
-  var iconProperty = document.getElementById("searchIcon");
-  if(count == 0)
-  {
-    iconProperty.style.color =  #6CC417;
-    count = 1;
-  }
-  else
-  {
-    iconProperty.style.color = #43BFC7;
-    count = 0;
-  }
+  var projectDescription = document.getElementById("projectDescription").value;
+  var showText = document.getElementById("myTextArea");
+  showText.value = projectDescription;
+  document.getElementById("projectDescription").value = " ";
+}
+
+function GetFormInput()
+{
+  var title = document.getElementById("LessonTitle").value;
+  var id    = document.getElementById("LessonId").value;
+
+  var m11   = document.getElementById("mm1").value;
+  var d1    = document.getElementById("dd1").value;
+  var y1    = document.getElementById("yyyy1").value;
+
+  var m2   = document.getElementById("mm2").value;
+  var d2   = document.getElementById("dd2").value;
+  var y2   = document.getElementById("yyyy2").value;
+
+  var organization = document.getElementById("organization").value;
 
 }
