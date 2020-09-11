@@ -1,5 +1,4 @@
-
-dy {
+body {
   background-color:  white;
   background-size: 20px 20px;
   background-image:
@@ -24,7 +23,7 @@ h1 {
   border-style: solid;
   border-color: rgb(74, 162, 12, 0.3);
   border-width: 1px;
-  padding: 5px;
+  padding: 15px;
   display: inline-block;
   border-radius: 5px;
   width: 95%;
@@ -32,6 +31,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.topPanel p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
 }
 
 .button{
@@ -42,9 +46,9 @@ h1 {
   border-width: 0.95px;
   border-radius: 50px;
   font-family: 'Roboto Condensed', sans-serif;
-  padding: 15px;
+  padding: 13px;
   font-size: 16px;
-  margin: 2px 30px;
+  margin: 10px 30px;
   cursor: pointer;
 }
 
@@ -72,6 +76,9 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .search{
@@ -91,27 +98,26 @@ h1 {
   border-radius: 18px;
 }
 
-.mainDisplay{
-  border-style: solid;
-  background-color: rgb(255, 255, 255, 0.80);
+.mainDisplay .AdvSearch{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-variant: small-caps;
+  background-color: rgb(255, 255, 255);
   border-style: solid;
   border-color: rgb(74, 162, 12, 0.3);
   border-width: 1px;
-  width: 95%;
+  border-radius: 5px;
+  position: relative;
   display: inline-block;
   display: flex;
-  padding: 5px;
-  margin: auto;
-  border-radius: 5px;
+  width: 250px;
+  margin: 5px 15px;
 }
-
-.mainDisplay h2{
-  font-family: 'Roboto Condensed', sans-serif;
+.AdvSearch h2{
   font-size: 20px;
-  padding: 15px;
-  font-variant: small-caps;
-  text-decoration: underline;
-
+  margin: auto;
+  padding: 5px;
+  color: #3D3C3A;
+  text-decoration: none;
 }
 
 .mainDisplay p{
@@ -121,5 +127,141 @@ h1 {
     margin-top: 5%;
     display: inline-block;
     font-size: 15px;
+}
 
+.topPanel label{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
+  vertical-align: middle;
+
+}
+.topPanel textarea{
+ resize: none;
+ display: block;
+ vertical-align: middle;
+ font-family: 'Roboto Slab', sans-serif;
+ position: relative;
+ left: 20%;
+ height: 100px;
+ box-sizing: border-box;
+ border-color: green;
+}
+
+.SubmitDescription{
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  right: 28%;
+  bottom: 69%;
+  z-index: 2;
+  color: #6CC417;
+  background-color: white;
+}
+
+.BackButton{
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+  background-color: #6CC417;
+  position: relative;
+  vertical-align: middle;
+  right: 20%;
+  align: left;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+
+.AdvSearch label{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.AdvSearch form{
+  background-color: #F5F5DC;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 232px;
+  color: green;
+  position: absolute;
+  top: 38px;
+}
+
+.AdvSearch .SubmitSearch{
+  background-color: #6CC417;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 5px;
+  width: 225px;
+  padding: 5px;
+  margin: 10px 0px;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.AdvSearch .Date{
+  width: 25%;
+}
+
+.dropdown{
+  position: relative;
+  margin: 0px 275px;
+  top: -43px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: rgb(74, 162, 12, 0.3);
+  padding: 8.5px;
+  width: 75.6%;
+}
+
+.dropdown label{
+ font-family: 'Roboto Condensed', sans-serif;
+ color: #3D3C3A;
+ padding: 5px;
+}
+
+.dropdownBtn{
+  background-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: green;
+  color: #3D3C3A;
+  left: 25%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.dropdownBtn i{
+  color:green;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 0px 113px;
+}
+
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 10px 13px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
