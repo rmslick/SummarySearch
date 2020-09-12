@@ -204,16 +204,3 @@ class DataBaseInterface:
             except:
                 break
 database = DataBaseInterface()
-#Smart search: general problem
-#database.SmartSearchCorpus("RF tags are broken")
-#Profile search
-#database.BuildProfile(self.titles[5])
-#Risk analysis
-#Graphing
-testCorpus = database.titles[0:3]
-testSentence = database.titles[1]
-testSentences = [testSentence]
-#Group monitoring
-database.Graph("RF tags are broken")
-
-#database.GroupingAlgorithm()
