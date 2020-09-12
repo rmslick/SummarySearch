@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- FONTAWESOME SEARCH ICON -->
+  <script src="https://kit.fontawesome.com/0200303f01.js" crossorigin="anonymous"></script>
+  <!-- This is a way to link the CSS file to the HTML file -->
+  <link rel="stylesheet" type="text/css" href="LLAnalyzerStylesheet.css">
+  <!--- External libs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+  <script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+
+  <!-- This is the way to link the js file to the HTML file -->
+  <script type="text/javascript" src="DataHandling.js"></script>
+  <script type="module" src="LLanalyzer.js"></script>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <title>Lessons Learned Project Tool</title>
+  <h1>Lessons Learned Project Tool</h1>
+    <div class="topPanel">
+      <input class = "search" name = "" placeholder="Search for Lessons Learned...">
+      <button class="searchIcon" id="searchIcon" href ="#" onclick="SearchIconClick()">
+      <i class="fas fa-search"></i>
+    </button>
+
+      <a href="smartSearch.html"><button class="button smartSearchButton">Smart Search</button></a>
+      <button class="button riskAnalysisButton">Risk Analysis</button>
+    </div>
+  </div>
+  <!-- AlLL THE CONTENT TO BE SHOWN HERE. -->
+  <div class="mainDisplay">
+    <div class="AdvSearch">
+      <h2>Advanced Search: </h2>
+      <form>
+      <label for="LessonTitle">Title: </label><br>
+      <input type="text" id="LessonTitle" name="LessonTitle" class="Title">
+      <br>
+
+      <label for="LessonId">Lesson Learned ID: </label><br>
+      <input type="text" id="LessonId" name="LessonId"><br>
+
+      <label for="LessonDate">Lesson Date: </label>
+      <br>
+      <input type="text" id="mm1" name="mm1" class="Date" placeholder="MM">
+      <input type="text" id="dd1" name="dd1" class="Date" placeholder="DD">
+      <input type="text" id="yyyy1" name="yyyy1" class="Date" placeholder="YYYY">
+      <br>
+
+      <label for="LessonPublishDate">Publish Date: </label>
+      <br>
+      <input type="text" id="mm2" name="mm2" class="Date" placeholder="MM">
+      <input type="text" id="dd2" name="dd2" class="Date" placeholder="DD">
+      <input type="text" id="yyyy2" name="yyyy2" class="Date" placeholder="YYYY">
+      <br>
+
+      <label for="Organization"> Organization: </label><br>
+      <input type="text" id="organization" name="organization">
+      <br>
+      <button type="button" class="SubmitSearch" onclick="GetFormInput()">Submit</button>
+    </form>
+      </div>
+
+      <div class="LLDisplay">
+        <div class="dropdown">
+          <label>Select Category by Letter: </label>
+          <a href="#" onclick=DisplayCategoryA()>A</a>
+          <a href="#">B</a>
+          <a href="#">C</a>
+          <a href="#">D</a>
+          <a href="#">E</a>
+          <a href="#">F</a>
+          <a href="#">G</a>
+          <a href="#">H</a>
+          <a href="#">I</a>
+          <a href="#">J</a>
+          <a href="#">K</a>
+          <a href="#">L</a>
+          <a href="#">M</a>
+          <a href="#">N</a>
+          <a href="#">O</a>
+          <a href="#">P</a>
+          <a href="#">Q</a>
+          <a href="#">R</a>
+          <a href="#">S</a>
+          <a href="#">T</a>
+          <a href="#">U</a>
+          <a href="#">V</a>
+          <a href="#">W</a>
+          <a href="#">X</a>
+          <a href="#">Y</a>
+          <a href="#">Z</a>
+      </div>
+      <div class = "Categories">
+          <p id="displayCategories">    Accident Investigation <br>
+          Acquisition / procurement strategy and planning <br>
+          Administration / Organization <br>
+          Advanced planning of safety systems <br>
+          Aerospace Safety Advisory Panel <br>
+          Affect of Cultural factors on long-term human and robotic missions <br>
+          Air-Traffic Management <br>
+          Aircraft<br></p>
+      </div>
+</div>
+
+  </div>
+</body>
+</html>
