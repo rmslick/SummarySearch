@@ -8,9 +8,11 @@
   <!--- External libs -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+  <script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+
   <!-- This is the way to link the js file to the HTML file -->
   <script type="text/javascript" src="DataHandling.js"></script>
-  <script type="text/javascript" src="LLanalyzer.js"></script>
+  <script type="module" src="LLanalyzer.js"></script>
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -20,8 +22,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-  <title>Lessons Learned Analyzer</title>
-  <h1>Lessons Learned Analyzer</h1>
+  <title>Lessons Learned Project Tool</title>
+  <h1>Lessons Learned Project Tool</h1>
     <div class="topPanel">
       <input class = "search" name = "" placeholder="Search for Lessons Learned...">
       <button class="searchIcon" id="searchIcon" href ="#" onclick="SearchIconClick()">
@@ -30,7 +32,6 @@
 
       <a href="smartSearch.html"><button class="button smartSearchButton">Smart Search</button></a>
       <button class="button riskAnalysisButton">Risk Analysis</button>
-      <a href="AboutUs.html"><button class="button aboutUsButton">About Us</button></a>
     </div>
   </div>
   <!-- AlLL THE CONTENT TO BE SHOWN HERE. -->
@@ -68,20 +69,45 @@
 
       <div class="LLDisplay">
         <div class="dropdown">
-          <label>Select Category: </label>
-          <button class="dropdownBtn">Categories
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href=#>Title</a>
-              <a href=#>Lesson ID</a>
-              <a href=#>Topic</a>
-              <a href=#>Location</a>
-            </div>
+          <label>Select Category by Letter: </label>
+          <a href="#" onclick=DisplayCategoryA()>A</a>
+          <a href="#">B</a>
+          <a href="#">C</a>
+          <a href="#">D</a>
+          <a href="#">E</a>
+          <a href="#">F</a>
+          <a href="#">G</a>
+          <a href="#">H</a>
+          <a href="#">I</a>
+          <a href="#">J</a>
+          <a href="#">K</a>
+          <a href="#">L</a>
+          <a href="#">M</a>
+          <a href="#">N</a>
+          <a href="#">O</a>
+          <a href="#">P</a>
+          <a href="#">Q</a>
+          <a href="#">R</a>
+          <a href="#">S</a>
+          <a href="#">T</a>
+          <a href="#">U</a>
+          <a href="#">V</a>
+          <a href="#">W</a>
+          <a href="#">X</a>
+          <a href="#">Y</a>
+          <a href="#">Z</a>
       </div>
-  
+      <div class = "Categories">
+          <p id="displayCategories">    Accident Investigation <br>
+          Acquisition / procurement strategy and planning <br>
+          Administration / Organization <br>
+          Advanced planning of safety systems <br>
+          Aerospace Safety Advisory Panel <br>
+          Affect of Cultural factors on long-term human and robotic missions <br>
+          Air-Traffic Management <br>
+          Aircraft<br></p>
       </div>
-
+</div>
 
   </div>
 </body>

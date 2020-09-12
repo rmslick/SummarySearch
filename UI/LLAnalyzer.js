@@ -1,9 +1,20 @@
+
 function GetProjDescription()
 {
   var projectDescription = document.getElementById("projectDescription").value;
   var showText = document.getElementById("myTextArea");
   showText.value = projectDescription;
-  document.getElementById("projectDescription").value = " ";
+
+  const toSend = {
+    projDescription: projectDescription
+  }
+  const jsonString = JSON.stringify(toSend);
+  console.log(jsonString);
+
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "receiveData.php");
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.send(jsonString);
 }
 
 function GetFormInput()

@@ -355,3 +355,25 @@ h1 {
   border-width: 1px;
   font-size: 12px;
 }
+
+.LLDisplay a{
+  font-family:'Roboto Condensed', sans-serif;
+  color: #43BFC7;
+
+}
+
+.mainDisplay .Categories{
+  background-color:white;
+  position: absolute;
+  right: -1.5%;
+  top: 35%;
+  width: 1000px;
+  border-style: solid;
+  border-color: rgb(74, 162, 12, 0.3);
+  border-width: 1px;
+
+}
+
+.Categories p{
+  padding: 10px;
+}
