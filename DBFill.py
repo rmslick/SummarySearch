@@ -5,7 +5,8 @@ import json
 from transformers import T5Tokenizer, T5ForConditionalGeneration, T5Config
 import re
 import pymongo
-df = pd.read_excel('/home/rmslick/NasaHackathon/Data/LLDBExport_hackathon.xlsx')
+#Load xlsx heres
+df = pd.read_excel('/~.xlsx')
 model = T5ForConditionalGeneration.from_pretrained('t5-small')
 tokenizer = T5Tokenizer.from_pretrained('t5-small')
 device = torch.device('cpu')
