@@ -2,7 +2,7 @@
 
 ### Overview
 `SummarySearch` This project demonstrates the ability to cluster data on a NOSQL database using senitment analysis and abstractive text summarzation techniques.  Included is a user interface which connects the user to a host of functions which can connect current issues to previous lessons learned an attempt to perform risk analysis given sentimetns of prior lessons learned and current project proposals was attempted but proved unreliable.  Additionally there is a graphical user interface developed in html css and JS which allows users to see how our functionality may be used.
-Sentiment analysis followed from SBERT: https://arxiv.org/pdf/1908.10084.pdf using pytorch.
+Sentiment analysis followed from SBERT: https://arxiv.org/pdf/1908.10084.pdf using pytorch and extractive summary followed from https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html both of which underpin all search related functionality.
 ![alt text](https://user-images.githubusercontent.com/30224178/92985860-886e1e80-f484-11ea-96c0-f172973d1a26.PNG)
                                                   Current home page of web page UI 
 
